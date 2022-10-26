@@ -56,6 +56,12 @@ body {
     align-self: flex-start;
     border-radius: 3rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .5s ease-in-out;
+}
+
+.container .container__info a:hover {
+    color: var(--branco);
+    background-color: var(--soft-magenta);
 }
 
 .contacts {
@@ -65,19 +71,22 @@ body {
     margin-right: 15rem;
 }
 
-.contacts li {
-    width: 4rem;
-    height: 4rem;
-    border: 1px solid var(--branco);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .contacts li a {
     font-size: 2rem;
     color: var(--branco);
+    border: 1px solid var(--branco);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+}
+
+.contacts li a:hover {
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
 }
 
 @media ( max-width: 768px) {
